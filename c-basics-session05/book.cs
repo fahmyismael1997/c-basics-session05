@@ -12,5 +12,6 @@ namespace c_basics_session05
     internal class Book
     {
         private string Password = "secret";
+        internal int copiesInStock = 5 ;
     }
 }

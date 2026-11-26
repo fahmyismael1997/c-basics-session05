@@ -11,8 +11,16 @@ namespace c_basics_session05
             (outside the class). What happens, and why? */
 
             Book book = new Book();
-            Console.WriteLine(book.Password);//this compiler Error , cannot Access a private member to fix it make password public
+            //Console.WriteLine(book.Password);//this compiler Error , cannot Access a private member to fix it make password public
             #endregion
+
+            #region Question 2
+            /*2-Add an internal int copiesInStock = 5; field to Book. Print it from Main. Does it compile? 
+            Why?*/
+
+            Console.WriteLine(book.copiesInStock);//yes , internal access modifer can see and change it from this project (Assamply)
+            #endregion
+
         }
     }
 }
