@@ -15,5 +15,7 @@ namespace c_basics_session05
         internal int copiesInStock = 5 ;
 
         public string Title;
+
+        internal Genre Property;
     }
 }
