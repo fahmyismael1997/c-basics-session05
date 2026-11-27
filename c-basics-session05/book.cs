@@ -13,5 +13,7 @@ namespace c_basics_session05
     {
         private string Password = "secret";
         internal int copiesInStock = 5 ;
+
+        public string Title;
     }
 }

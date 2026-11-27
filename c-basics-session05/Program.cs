@@ -18,7 +18,14 @@ namespace c_basics_session05
             /*2-Add an internal int copiesInStock = 5; field to Book. Print it from Main. Does it compile? 
             Why?*/
 
-            Console.WriteLine(book.copiesInStock);//yes , internal access modifer can see and change it from this project (Assamply)
+           // Console.WriteLine(book.copiesInStock);//yes , internal access modifer can see and change it from this project (Assamply)
+            #endregion
+
+            #region Question 3
+            /*3-Add a public string Title; field to Book. Set it and print it from Main.*/
+
+            book.Title = "Clean code";
+            Console.WriteLine(book.Title);
             #endregion
 
         }
