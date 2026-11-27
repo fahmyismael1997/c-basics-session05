@@ -1,4 +1,5 @@
-﻿using System.Net.Sockets;
+﻿using System.Diagnostics.Metrics;
+using System.Net.Sockets;
 
 namespace c_basics_session05
 {
@@ -68,10 +69,23 @@ namespace c_basics_session05
             /*8-Given string genreText = "Science";, convert it into a Genre value using Enum.Parse() and 
               print the result. */
 
-            string genreText = "Science";
-            Genre genre= (Genre)Enum.Parse(typeof(Genre), genreText);
+            //string genreText = "Science";
+            //Genre genre= (Genre)Enum.Parse(typeof(Genre), genreText);
 
-            Console.WriteLine(genre);
+            //Console.WriteLine(genre);
+            #endregion
+
+            #region Question 9
+            /*9-Given string genreText = "Mystery"; (not a valid Genre value), use Enum.TryParse() to 
+              attempt the conversion. Print "Unknown genre" if it fails.*/
+
+            string genreText = "Mystery";
+            if(!Enum.TryParse(typeof(Genre), genreText, out object result));
+                Console.WriteLine("Unknown genre");
+
+            
+
+
             #endregion
 
 
