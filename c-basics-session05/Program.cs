@@ -52,8 +52,16 @@ namespace c_basics_session05
 
             #region Question 6
             /*6-Given int genreNumber = 1;, cast it into a Genre value and print the result.*/
-            int genreNumber = 1;
-            Console.WriteLine((Genre)genreNumber);
+            //int genreNumber = 1;
+            //Console.WriteLine((Genre)genreNumber);
+            #endregion
+
+            #region Question 7
+            /*7-Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it. */
+
+            Genre genre = Genre.Fiction;
+           
+            Console.WriteLine(genre.ToString());
             #endregion
 
 
